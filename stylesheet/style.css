@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caja{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(55, 5, 163);
+    border-radius: 20px;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+/* @keyframes animacion {
+    0%{position: relative; }
+    25%{ position: relative; left: 400px; }
+    50%{  position: relative; right: 400px; }
+    75%{  position: relative; top: 400px;}
+    100%{ position: relative; bottom: 400px;}
+} */
+@keyframes animacion {
+    0%{ background-color: rgb(213, 32, 237)
+    ;top: 0;
+    left: 0;}
+    25%{ background-color: rgb(128, 42, 221);
+        top: 0;
+        left: 400px;}
+    50%{ background-color: rgb(43, 53, 237);
+        top: 400px;
+        left: 400px;}
+    75%{ background-color: rgb(127, 255, 208);
+        top: 400px;
+        left: 0;}
+    100%{ background-color: rgb(83, 235, 23);
+        top: 0;
+        left: 0;}
+    
+}
